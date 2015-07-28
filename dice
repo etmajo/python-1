@@ -53,7 +53,10 @@ sides.append('''
   -------
 ''')
 
+num = 1
 while True:
-    side = random.choice(sides)
+    print(c.clear, end="")
+    for count in range(num):
+    side = random.choice(sides) 
     print(c.clear + c.random_color() + side + c.reset)
     input()
